@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
                 <h3>Hakkımızda</h3>
-                <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. lacinia eget consectetur sed, convallis at tellus..</p>
-                <div class="read">
+                <p>Giresun Üniversitesi adına yapmış olduğumuz bitirme projesi sizlerle bu projede sizlerin not ve kitap takası yapabileceğiniz bir platform yapmayı amaçladık. Biz yaparken çok geliştik ve çok eğlendik. Sizlerinde kullanırken gelişmeniz ve eğlenebilmeniz dileğiyle...</p>
+                @*<div class="read">
                     <a href="single.html" class="btn btn-primary read-m">Devamını Oku</a>
-                </div>
+                </div>*@
             </div>
             <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
 
@@ -73,17 +73,7 @@
             </div>
             <!-- subscribe -->
             <div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
-                <h2>Signup to our newsletter</h2>
-                <div class="subscribe-main text-left">
-                    <div class="subscribe-form">
-                        <form action="#" method="post" class="subscribe_form">
-                            <input class="form-control" type="email" placeholder="Enter your email..." required="">
-                            <button type="submit" class="btn btn-primary submit">Submit</button>
-                        </form>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <p>We respect your privacy.No spam ever!</p>
-                </div>
+                @await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
                 <!-- //subscribe -->
             </div>
         </div>
@@ -93,17 +83,17 @@
                 <div class="copyrighttop">
                     <ul>
                         <li class="mx-3">
-                            <a class="facebook" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                                <span>Facebook</span>
+                            <a class="instagram" href="#">
+                                <i class="fab fa-instagram"></i>
+                                <span>Intagram</span>
                             </a>
                         </li>
                         <li>
-                            <a class="facebook" href="#">
+                            <a class="twitter" href="#">
                                 <i class="fab fa-twitter"></i>
                                 <span>Twitter</span>
                             </a>
-                        </li>
+                        @*</li>
                         <li class="mx-3">
                             <a class="facebook" href="#">
                                 <i class="fab fa-google-plus-g"></i>
@@ -115,15 +105,15 @@
                                 <i class="fab fa-pinterest-p"></i>
                                 <span>Pinterest</span>
                             </a>
-                        </li>
+                        </li>*@
                     </ul>
 
                 </div>
             </div>
             <div class="w3layouts-agile-copyrightbottom">
                 <p>
-                    © @DateTime.Now.Year Weblog All Rights Reserved | Design by
-                    <a href="http://w3layouts.com/">W3layouts</a>
+                    © @DateTime.Now.Year ChangeBook Paylaşım Platformu | Design by
+                    <a href="http://w3layouts.com/">S.Tekin | M.G.Temiz | M.Helvacı</a>
                 </p>
 
             </div>
